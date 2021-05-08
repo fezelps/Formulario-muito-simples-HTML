@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 id="company">Zelps Company</h1>
+	<h5 id="tel">Telefone 2316-2206</h5> <form>
+		<div class="div">
+			<label>Nome completo:</label>
+			<input class="input" type="textarea" name="nome" required> <br>
+			<label>Data de nascimento:</label>
+			<input class="input" type="date" name="data"> <br>
+			<label>E-mail:</label>
+			<input class="input" type="email" name="email" required> <br>
+			<label>Telefone:</label>
+			<input class="input" type="text" name="numberclient"> <br>
+			<div>
+				<label>Linguagens de programação que você trabalha:</label> <br>
+				<label class="ling" >C</label>
+				<input type="checkbox" name="c">
+				<label class="ling" >C#</label>
+				<input type="checkbox" name="c#">
+				<label class="ling" >Python</label>
+				<input type="checkbox" name="python">
+				<label class="ling" >Java</label>
+				<input type="checkbox" name="java">
+				<label class="ling" >JavaScript</label>
+				<input type="checkbox" name="js">
+				<label class="ling" >Ruby</label>
+				<input type="checkbox" name="ruby"> <br>
+			</div>
+			<label>Envie seu currículo:</label>
+			<input id="cv" type="file" name="cv"> <br>
+			<label>Conte suas experiências:</label> <br>
+			<textarea id="exp"></textarea> <br>
+			<button id="submit" type="submit" onclick="(function(){
+				window.alert('Obrigado por preencher o formulário.');
+			})()">Enviar</button>
+		</div>
+	</form>
+</body>
+</html>
